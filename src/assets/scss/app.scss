@@ -98,12 +98,15 @@
       .about-people-author {
         flex: 1 0 0;
 
-        .author-name {
+        .author-name,
+        .author-institution {
           color: $black;
           margin: 0.375rem 0 0;
         }
 
         .author-location,
+        .author-email,
+        .author-website,
         .author-mutual {
           color: $dark-gray;
           margin-bottom: 0;

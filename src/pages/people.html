@@ -1,102 +1,78 @@
-<div class="people-you-might-know">
+ <div class="people-you-might-know">
   <div class="add-people-header">
     <h6 class="header-title">
       People involved in this project.
     </h6>
   </div>
-  <div class="row add-people-section">
-    <div class="small-12 medium-6 columns about-people">
-      <div class="about-people-avatar">
-        <img class="avatar-image" src="https://i.imgur.com/UPVxPjb.jpg" alt="Kishore Kumar">
-      </div>
-      <div class="about-people-author">
-        <p class="author-name">
-          Kishore Kumar
-        </p>
-        <p class="author-location">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          Mumbai, India
-        </p>
-        <p class="author-mutual">
-          <strong>Shahrukh Khan</strong> is a mutual friend.
-        </p>
-      </div>
+  <!-- START A NEW PERSON -->
+  <div id="people">
+  </div>
+<!-- END PERSON -->
+
+<!--
+<div class="row add-people-section">
+  <div class="small-12 medium-6 columns about-people">
+    <div class="about-people-avatar">
+      <img class="avatar-image" src="https://i.imgur.com/UPVxPjb.jpg" alt="Monica McGill">
     </div>
-    <div class="small-12 medium-6 columns add-friend">
-      <div class="add-friend-action">
-        <button class="button primary small">
-          <i class="fa fa-user-plus" aria-hidden="true"></i>
-          Add Friend
-        </button>
-        <button class="button secondary small">
-          <i class="fa fa-user-times" aria-hidden="true"></i>
-          Ignore
-        </button>
-      </div>
+    <div class="about-people-author">
+      <p class="author-name">
+        Monica McGill
+      </p>
+      <p class="author-location">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        State, Country
+      </p>
+      <p class="author-institution">
+        <strong>Some University</strong>.
+      </p>
     </div>
   </div>
-  <div class="row add-people-section">
-    <div class="small-12 medium-6 columns about-people">
-      <div class="about-people-avatar">
-        <img class="avatar-image" src="https://i.imgur.com/GHeazQ2.jpg" alt="Kishore Kumar">
-      </div>
-      <div class="about-people-author">
-        <p class="author-name">
-          Barack Obama
-        </p>
-        <p class="author-location">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          Hawaii, United States
-        </p>
-        <p class="author-mutual">
-          <strong>Hilary Clinton</strong> is a mutual friend.
-        </p>
-      </div>
-    </div>
-    <div class="small-12 medium-6 columns add-friend">
-      <div class="add-friend-action">
-        <button class="button primary small">
-          <i class="fa fa-user-plus" aria-hidden="true"></i>
-          Add Friend
-        </button>
-        <button class="button secondary small">
-          <i class="fa fa-user-times" aria-hidden="true"></i>
-          Ignore
-        </button>
-      </div>
+  <div class="small-12 medium-6 columns add-friend">
+    <div class="add-friend-action">
+      <button class="button primary small">
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+        Add Connection?
+      </button>
+      <button class="button secondary small">
+        <i class="fa fa-user-times" aria-hidden="true"></i>
+        Do something else
+      </button>
     </div>
   </div>
-  <div class="row add-people-section">
-    <div class="small-12 medium-6 columns about-people">
-      <div class="about-people-avatar">
-        <img class="avatar-image" src="https://i.imgur.com/SytPzuC.jpg" alt="Kishore Kumar">
-      </div>
-      <div class="about-people-author">
-        <p class="author-name">
-          Harry Manchanda
-        </p>
-        <p class="author-location">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          New Delhi, India
-        </p>
-        <p class="author-mutual">
-          <strong>Rafi Benkual</strong> is a mutual friend.
-        </p>
-      </div>
-    </div>
-    <div class="small-12 medium-6 columns add-friend">
-      <div class="add-friend-action">
-        <button class="button primary small">
-          <i class="fa fa-user-plus" aria-hidden="true"></i>
-          Add Friend
-        </button>
-        <button class="button secondary small">
-          <i class="fa fa-user-times" aria-hidden="true"></i>
-          Ignore
-        </button>
-      </div>
-    </div>
-  </div>
+</div>
+ -->
+
+<script>
+
+//var data = "../data/people.json";
+var data = {"people":[{"name":"Monica McGill","location":"USA","institution":"Bradley University","email":"mmcgill [at] bradley.edu","website":"http://ifmemoryserves.org/"},{"name":"Chris Johnson","location":"Wisconsin, USA","institution":"Univ. of Wisconsin, Eau Claire","email":"johnch [at] uwec.edu","website":"http://ifmemoryserves.org/"},{"name":"James Atlas","location":"Delaware, USA","institution":"University of Delaware","email":"jatlas [at] udel.edu","website":"http://ifmemoryserves.org/"},{"name":"Durell Bouchard","location":"USA","institution":"Roanoke College","email":"bouchard [at] roanoke.edu","website":"http://ifmemoryserves.org/"},{"name":"Larry Merkle","location":"Oslo West 555","institution":"Air Force Institute ofTechnology ","email":"xphileprof [at] gmail.com","website":"http://ifmemoryserves.org/"},{"name":"Chris Messom","location":"Canada","institution":"Monash University","email":"christopher.messom [at] monash.edu","website":"http://ifmemoryserves.org/"},{"name":"Ian Pollock","location":"Oslo West 555","institution":"Cafornia State University,East Bay ","email":"ian.pollock [at] csueastbay.edu","website":"http://ifmemoryserves.org/"},{"name":"Michael James Scott","location":"United Kingdom","institution":"Falmouth University","email":"adrir [at] adrir.com","website":"http://ifmemoryserves.org/"}]};
+
+var x = "";
+
+for (i in data.people) {
+
+  x += "<div class='row add-people-section'><div class='small-12 medium-6 columns about-people'><div class='about-people-avatar'><img class='avatar-image' src='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png' alt="+ data.people[i].name +"></div><div class='about-people-author'><p class='author-name'>"+ data.people[i].name +"</p><p class='author-institution'>"+data.people[i].institution+"</p><p class='author-email fa'>"+data.people[i].email+"</p><p class='author-website fa '>"+data.people[i].website+"</p></div></div></div>"
+
+  console.log(data.people[i].name);
+  console.log(data.people[i].location);
+  console.log(data.people[i].institution);
+  console.log(data.people[i].email);
+  console.log(data.people[i].website);
+
+
+}
+document.getElementById("people").innerHTML = x;
+
+
+</script>
+
+
+
+<!-- use this ? https://github.com/stewartlord/identicon.js -->
+
+
+
   <div class="view-more-people">
     <p class="view-more-text">
       <a href="#" class="view-more-link">View More..</a>
