@@ -29,7 +29,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy, cname), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -132,6 +132,20 @@ function images() {
     })))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
+
+//GULP Copy
+//gulp.src(['src/pages/CNAME']).pipe(gulp.dest(PATHS.dist));
+
+
+function cname() {
+  return gulp.src([
+      'src/pages/CNAME'
+  ])
+  .pipe(gulp.dest(PATHS.dist));
+}
+
+
+
 
 // Start a server with BrowserSync to preview the site in
 function server(done) {
