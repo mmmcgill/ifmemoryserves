@@ -10,153 +10,88 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-    <nav class="top-bar topbar-responsive">
-      <div class="top-bar-title">
-        <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-        </span>
-        <a class="topbar-responsive-logo" href="index.html"><strong>If Memory Serves</strong></a>
-      </div>
-      <div id="topbar-responsive" class="topbar-responsive-links">
-        <div class="top-bar-right">
-          <ul class="menu simple vertical medium-horizontal">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="download.html">Download</a></li>
-            <!-- <li><a href="paper.html">Paper</a></li>
-            <li><a href="research.html">Research</a></li> -->
-            <li><a href="evaluate.html">Evaluate</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-            <div class="large-12 cell">
-    
-    
-        <div class="people-you-might-know">
-      <div class="add-people-header">
-        <h6 class="header-title">
-          People involved in this project.
-        </h6>
-      </div>
-      <!-- START A NEW PERSON -->
-      <div id="people">
-      </div>
-    <!-- END PERSON -->
-    
-    <!--
-    <div class="row add-people-section">
-      <div class="small-12 medium-6 columns about-people">
-        <div class="about-people-avatar">
-          <img class="avatar-image" src="https://i.imgur.com/UPVxPjb.jpg" alt="Monica McGill">
-        </div>
-        <div class="about-people-author">
-          <p class="author-name">
-            Monica McGill
-          </p>
-          <p class="author-location">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            State, Country
-          </p>
-          <p class="author-institution">
-            <strong>Some University</strong>.
-          </p>
-        </div>
-      </div>
-      <div class="small-12 medium-6 columns add-friend">
-        <div class="add-friend-action">
-          <button class="button primary small">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            Add Connection?
-          </button>
-          <button class="button secondary small">
-            <i class="fa fa-user-times" aria-hidden="true"></i>
-            Do something else
-          </button>
-        </div>
-      </div>
-    </div>
-     -->
-    
-    <script>
-    
-    //var data = "../data/people.json";
-    var data = {"people":[
-      {"img":"assets/img/monicamcgill.jpg", "name":"Monica McGill","location":"USA","institution":"Bradley University","email":"mmcgill [at] bradley.edu","website":"http://ifmemoryserves.org/"},
-      {"img":"assets/img/chrisjohnson.jpg","name":"Chris Johnson","location":"Wisconsin, USA","institution":"Univ. of Wisconsin, Eau Claire","email":"johnch [at] uwec.edu","website":"http://www.cs.uwec.edu/department_info/faculty_and_staff.php?prof=johnch"},
-      {"img":"assets/img/jamesatlas.jpg","name":"James Atlas","location":"Delaware, USA","institution":"University of Delaware","email":"jatlas [at] udel.edu","website":"https://www.eecis.udel.edu/~atlas/"},
-      {"img":"assets/img/durellbouchard.jpg","name":"Durell Bouchard","location":"USA","institution":"Roanoke College","email":"bouchard [at] roanoke.edu","website":"https://directory.roanoke.edu/faculty/209"},
-      {"img":"assets/img/larrymerkle.jpg","name":"Larry Merkle","location":"Oslo West 555","institution":"Air Force Institute ofTechnology ","email":"xphileprof [at] gmail.com","website":"https://www.afit.edu/BIOS/bio.cfm?facID=266"},
-      {"img":"assets/img/chrismessom.jpg","name":"Chris Messom","location":"Canada","institution":"Monash University","email":"christopher.messom [at] monash.edu","website":"http://monash.edu/research/explore/en/persons/chris-messom(2e27337e-bc75-4932-968d-20c5ed574f08).html"},
-      {"img":"assets/img/ianpollock.jpg","name":"Ian Pollock","location":"USA","institution":"California State University,East Bay ","email":"ian.pollock [at] csueastbay.edu","website":"http://www.csueastbay.edu/directory/profiles/art/pollockian.html"},
-      {"img":"assets/img/micahaelscott.jpg","name":"Michael James Scott","location":"United Kingdom","institution":"Falmouth University","email":"adrir [at] adrir.com","website":"https://www.falmouth.ac.uk/content/dr-michael-scott"}]
-    };
-    
-    var x = "";
-    
-    for (i in data.people) {
-    
-      x += "<div class='row add-people-section'><div class='small-12 medium-6 columns about-people'><div class='about-people-avatar'><img class='avatar-image' src='"+data.people[i].img+"' alt="+ data.people[i].name +"></div><div class='about-people-author'><p class='author-name'>"+ data.people[i].name +"</p><p class='author-institution'>"+data.people[i].institution+"</p><p class='author-email fa'>"+data.people[i].email+"</p><p class='author-website fa '>"+data.people[i].website+"</p></div></div></div>"
-    
-      console.log(data.people[i].img);
-      console.log(data.people[i].name);
-      console.log(data.people[i].location);
-      console.log(data.people[i].institution);
-      console.log(data.people[i].email);
-      console.log(data.people[i].website);
-    
-    
-    }
-    document.getElementById("people").innerHTML = x;
-    
-    
-    </script>
-    
-    
-    
-    <!-- use this ? https://github.com/stewartlord/identicon.js -->
-    
-    
-    
-    </div>
-    </div>
-    </div>
-    </div>
-    
-
-
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="callout cell auto">
-    
-    
-    
-    
-          <div class="cell auto ">
-            <small><i xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type"><a xmlns:cc="http://creativecommons.org/ns#" href="http://ifmemoryserves.org/" property="cc:attributionName" rel="cc:attributionURL">If Memory Serves</a></i> by Monica McGill, Chris Johnson, James Atlas, Durell Bouchard, Larry Merkle, Chris Messon, Ian Pollock, Michael Scott is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-                  </a>.</small>
-          </div>
-    
-          <div class="small-2 ">
-    
-              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-                <img alt="Creative Commons License" class="align-center" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+              <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+              
+              <nav class="top-bar topbar-responsive cell">
+                <div class="top-bar-title">
+                  <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>
+                  </span>
+                  <a class="topbar-responsive-logo" href="index.html"><strong>If Memory Serves</strong></a>
+                </div>
+                <div id="topbar-responsive" class="topbar-responsive-links">
+                  <div class="top-bar-right">
+                    <ul class="menu simple vertical medium-horizontal">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="download.html">Download</a></li>
+                      <!-- <li><a href="paper.html">Paper</a></li>
+                      <li><a href="research.html">Research</a></li> -->
+                      <li><a href="evaluate.html">Evaluate</a></li>
+                      <li><a href="people.html">People</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              
               </div>
-    
-    
-    
-    
-            </div>
-    
-        </div>
-      </div>
+              </div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+
+
+
+
+          
+              <h4 class="cell header-title">
+                Meet the people involved in this project.
+              </h4>
+          </div>
+            <!-- START A NEW PERSON -->
+          <div id="people" class="grid-x grid-margin-x medium-up-2 large-up-4">
+          
+          
+          <script>
+          var data = {"people":[
+            {"img":"assets/img/monicamcgill.jpg", "name":"Monica McGill","location":"USA","institution":"Bradley University","email":"mmcgill&commat;bradley&period;edu","website":"ifmemoryserves.org/"},
+            {"img":"assets/img/chrisjohnson.jpg","name":"Chris Johnson","location":"Wisconsin, USA","institution":"Univ. of Wisconsin, Eau Claire","email":"johnch&commat;uwec&period;edu","website":"www.cs.uwec.edu/department_info/faculty_and_staff.php?prof=johnch"},
+            {"img":"assets/img/jamesatlas.jpg","name":"James Atlas","location":"Delaware, USA","institution":"University of Delaware","email":"jatlas&commat;udel&period;edu","website":"www.eecis.udel.edu/~atlas/"},
+            {"img":"assets/img/durellbouchard.jpg","name":"Durell Bouchard","location":"USA","institution":"Roanoke College","email":"bouchard&commat;roanoke&period;edu","website":"directory.roanoke.edu/faculty/209"},{"img":"assets/img/larrymerkle.jpg","name":"Larry Merkle","location":"Oslo West 555","institution":"Air Force Institute of Technology ","email":"xphileprof&commat;gmail&period;com","website":"www.afit.edu/BIOS/bio.cfm?facID=266"},
+            {"img":"assets/img/chrismessom.jpg","name":"Chris Messom","location":"Canada","institution":"Monash University","email":"christopher.messom&commat;monash&period;edu","website":"monash.edu/research/explore/en/persons/chris-messom(2e27337e-bc75-4932-968d-20c5ed574f08).html"},
+            {"img":"assets/img/ianpollock.jpg","name":"Ian Pollock","location":"USA","institution":"California State University, Eastbay", "email":"ian&period;pollock&commat;csueastbay&period;com","website":"www.csueastbay.edu/directory/profiles/art/pollockian.html"},
+            {"img":"assets/img/micahaelscott.jpg","name":"Michael James Scott","location":"United Kingdom","institution":"Falmouth University","email":"adrir&commat;adrir&period;com","website":"www.falmouth.ac.uk/content/dr-michael-scott"}]
+          };
+          //var data = "assets/data/people.json";
+          var person = "";
+          for (i in data.people) {
+            person += "<div class='cell callout'><img class='avatar-image' src='" +data.people[i].img+
+            "' alt="+ data.people[i].name +
+            "><h5 class='author-name'>"+ data.people[i].name +
+            "</h5><h6 class='author-institution'>"+data.people[i].institution+
+            "</h6><p class='author-contact fa'><a href=mailto'"+data.people[i].email+
+            "'>Email</a> &nbsp &#124; &nbsp;<a href='http://"+data.people[i].website+
+            "'>Homepage</a></p></div>"
+          }
+          document.getElementById("people").innerHTML = person;
+          </script>
+          
     </div>
+
+
+              <div class="grid-x grid-margin-x  callout footer">
+                <p class="cell medium-10 ">
+                  <small><i xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type"><a xmlns:cc="http://creativecommons.org/ns#" href="http://ifmemoryserves.org/" property="cc:attributionName" rel="cc:attributionURL">If Memory Serves</a></i> by Monica McGill, Chris Johnson, James Atlas, Durell Bouchard, Larry Merkle, Chris Messon, Ian Pollock, Michael Scott is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</small>
+                </p>
+                <p class="cell medium-2 ">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                      <img alt="Creative Commons License" class="align-center" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                </p>
+              </div>
+
+  </div>
+
     <script src="assets/js/app.js"></script>
   </body>
 </html>

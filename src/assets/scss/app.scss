@@ -55,110 +55,43 @@
 // Google Fonts
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
-//div {border:1px solid red;padding:1px;}
+//@import url('../fonts/scss/font-awesome.scss');
+//@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?family=font-a');
+//$awesome-font-family:'font-a', Times, serif;
 // custom styles
 
 // PEOPLE
-.people-you-might-know {
-  background-color: $white;
-  padding: 1rem 0 0;
-  border: 1px solid $medium-gray;
-  box-shadow: 0 0 rem-calc(50) rgba(0,0,0, 0.18);
-
-  .add-people-header {
-    padding: 0 0.9375rem;
-    border-bottom: 0.0625rem solid $medium-gray;
-
-    .header-title {
-      font-weight: bold;
-    }
-  }
-
-  .add-people-section {
-    margin: 1rem 0 0;
-    padding-bottom: 1rem;
-    border-bottom: 0.0625rem solid $medium-gray;
-
-    .about-people {
-      display: flex;
-      align-items: flex-start;
-
-      .about-people-avatar {
-        padding-right: 0.5rem;
-        padding-left: 0;
-
-        .avatar-image {
-          width: rem-calc(80);
-          height: rem-calc(80);
-          border-radius: 50%;
-          border: 0.0625rem solid $medium-gray;
+.oneperson {
+      margin: 1rem 0 0;
+      padding-bottom: 1rem;
+      }
+.avatar-image {
+      //width: rem-calc(80);
+      //height: rem-calc(80);
+      //border-radius: 50%;
+      border: 0.0625rem solid $medium-gray;
+      }
+.author-name,
+.author-institution {
+      color: $black;
+      margin: 0.375rem 0 0;
         }
-      }
-
-      .about-people-author {
-        flex: 1 0 0;
-
-        .author-name,
-        .author-institution {
-          color: $black;
-          margin: 0.375rem 0 0;
-        }
-
-        .author-location,
-        .author-email,
-        .author-website,
-        .author-mutual {
-          color: $dark-gray;
-          margin-bottom: 0;
-          font-size: 0.85em;
-        }
-      }
-    }
-
-    .add-friend {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @include breakpoint(small only) {
-        justify-content: flex-start;
-      }
-
-      .add-friend-action {
-        margin-top: 0.7rem;
-      }
-    }
-  }
-
-  .view-more-people {
-    margin: .7rem 0;
-
-    .view-more-text {
+.author-contact {
+      color: $dark-gray;
       margin-bottom: 0;
-      text-align: center;
-
-      .view-more-link {
-        color: $primary-color;
-
-        &:hover,
-        &:focus {
-          text-decoration: underline;
+      font-size: 0.85em;
         }
-      }
-    }
-  }
-}
 // HERO
-$hero-height: 60vh;
 
 .hero-section {
   background: url('../img/cover2.png') 50% no-repeat;
   background-size: cover;
-  height: $hero-height;
+  height: 60vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 
   .hero-section-text {
     color: $white;
@@ -182,7 +115,6 @@ $topbar-font-weight:700;
 
   .topbar-responsive-logo {
     color: $white;
-    vertical-align: middle;
   }
 
   .menu {
@@ -286,3 +218,31 @@ $topbar-font-weight:700;
     }
   }
 }
+////////////////////media queries///////////////////////////
+// body text columns formatting//
+
+$bodytext-column-rule: 1px solid #dcdcdc;
+
+.bodytext{
+    margin: 20px auto;
+    @include breakpoint(small only) {
+        column-count: 1;
+    }
+    @include breakpoint(medium only) {
+        column-count: 2;
+        column-rule:  $bodytext-column-rule;
+        column-gap:   20px;
+        column-fill:balance;
+    }
+    @include breakpoint(large) {
+        column-count: 3;
+        column-rule:  $bodytext-column-rule;
+        column-gap:   50px;
+        column-fill:  balance;
+
+    }
+}
+
+.footer{margin-top: 20px;}
+
+////////////////radio buttons//////////////////

@@ -1,51 +1,68 @@
 {
-	"people": [{
-		"name": "Monica McGill",
-		"location": "USA",
-		"institution": "Bradley University",
-		"email": "mmcgill@bradley.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Chris Johnson",
-		"location": "Wisconsin, USA",
-		"institution": "Univ. of Wisconsin, Eau Claire",
-		"email": "johnch@uwec.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "James Atlas",
-		"location": "Delaware, USA",
-		"institution": "University of Delaware",
-		"email": "jatlas@udel.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Durell Bouchard",
-		"location": "USA",
-		"institution": "Roanoke College",
-		"email": "bouchard@roanoke.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Larry Merkle",
-		"location": "Oslo West 555",
-		"institution": "Air Force Institute ofTechnology ",
-		"email": "xphileprof@gmail.com",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Chris Messom",
-		"location": "Canada",
-		"institution": "Monash University",
-		"email": "christopher.messom@monash.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Ian Pollock",
-		"location": "Oslo West 555",
-		"institution": "Cafornia State University,East Bay ",
-		"email": "ian.pollock@csueastbay.edu",
-		"website": "http://someplace.com"
-	}, {
-		"name": "Michael James Scott",
-		"location": "United Kingdom",
-		"institution": "Falmouth University",
-		"email": "adrir@adrir.com",
-		"website": "http://someplace.com"
-	}]
+   "people ":[
+      {
+         "img":"assets/img/monicamcgill.jpg",
+         "name":"Monica McGill",
+         "location":"USA",
+         "institution":"Bradley University",
+         "email":"mmcgill&commat;bradley.edu",
+         "website":"http://ifmemoryserves.org/"
+      },
+      {
+         "img":"assets/img/chrisjohnson.jpg",
+         "name":"Chris Johnson",
+         "location":"Wisconsin, USA",
+         "institution":"Univ. of Wisconsin, Eau Claire",
+         "email":"johnch&commat;uwec.edu",
+         "website":"http://www.cs.uwec.edu/department_info/faculty_and_staff.php?prof=johnch"
+      },
+      {
+         "img":"assets/img/jamesatlas.jpg",
+         "name":"James Atlas",
+         "location":"Delaware, USA",
+         "institution":"University of Delaware",
+         "email":"jatlas&commat;udel.edu",
+         "website":"https://www.eecis.udel.edu/~atlas/"
+      },
+      {
+         "img":"assets/img/durellbouchard.jpg",
+         "name":"Durell Bouchard",
+         "location":"USA",
+         "institution":"Roanoke College",
+         "email":"bouchard  &commat; roanoke &period; edu",
+         "website":"https://directory.roanoke.edu/faculty/209"
+      },
+      {
+         "img":"assets/img/larrymerkle.jpg",
+         "name":"Larry Merkle",
+         "location":"Oslo West 555",
+         "institution":"Air Force Institute ofTechnology ",
+         "email":"xphileprof &commat; gmail &period; com",
+         "website":"https://www.afit.edu/BIOS/bio.cfm?facID=266"
+      },
+      {
+         "img":"assets/img/chrismessom.jpg",
+         "name":"Chris Messom",
+         "location":"Canada",
+         "institution":"Monash University",
+         "email":"christopher.messom&commat;monash.edu",
+         "website":"http://monash.edu/research/explore/en/persons/chris-messom(2e27337e-bc75-4932-968d-20c5ed574f08).html"
+      },
+      {
+         "img":"assets/img/ianpollock.jpg",
+         "name":"Ian Pollock",
+         "location":"USA",
+         "institution":"California State University,East Bay ",
+         "email":"ian&period;pollock&commat;csueastbay&period;edu",
+         "website":"http://www.csueastbay.edu/directory/profiles/art/pollockian.html"
+      },
+      {
+         "img":"assets/img/micahaelscott.jpg",
+         "name":"Michael James Scott",
+         "location":"United Kingdom",
+         "institution":"Falmouth University",
+         "email":"adrir&commat;adrir.com",
+         "website":"https://www.falmouth.ac.uk/content/dr-michael-scott"
+      }
+   ]
 }
