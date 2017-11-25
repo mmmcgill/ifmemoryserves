@@ -29,7 +29,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, pdfs, copy, cname), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, pdfs, game, copy, cname), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -141,7 +141,13 @@ function pdfs() {
   .pipe(gulp.dest(PATHS.dist));
 }
 
-
+// Copy game to the "dist" folder
+function game() {
+  return gulp.src([
+      'src/game/*'
+  ])
+  .pipe(gulp.dest(PATHS.dist));
+}
 
 
 
@@ -183,5 +189,6 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/assets/pdf/**/*').on('all', gulp.series(pdfs, browser.reload));
+  gulp.watch('src/assets/game/**/*').on('all', gulp.series(game, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
